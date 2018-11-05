@@ -27,13 +27,13 @@ plugin_author = "Connor Huffine"
 plugin_author_email = "chuffine@gmail.com"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/kontakt/Octoprint-Filament-Reloaded"
+plugin_url = "https://github.com/donniet/Octoprint-Filament-Reloaded"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"
 
 # Any additional requirements besides OctoPrint should be listed here
-plugin_requires = ['RPi.GPIO']
+plugin_requires = ['ASUS.GPIO']
 
 ### --------------------------------------------------------------------------------------------------------------------
 ### More advanced options that you usually shouldn't have to touch follow after this point

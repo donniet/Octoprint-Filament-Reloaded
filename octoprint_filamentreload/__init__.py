@@ -3,7 +3,7 @@ from __future__ import absolute_import
 
 import octoprint.plugin
 from octoprint.events import Events
-import RPi.GPIO as GPIO
+import ASUS.GPIO as GPIO
 from time import sleep
 
 
@@ -13,9 +13,9 @@ class FilamentReloadedPlugin(octoprint.plugin.StartupPlugin,
                              octoprint.plugin.SettingsPlugin):
 
     def initialize(self):
-        self._logger.info("Running RPi.GPIO version '{0}'".format(GPIO.VERSION))
-        if GPIO.VERSION < "0.6":       # Need at least 0.6 for edge detection
-            raise Exception("RPi.GPIO must be greater than 0.6")
+        self._logger.info("Running ASUS.GPIO version '{0}'".format(GPIO.VERSION))
+        #if GPIO.VERSION < "0.6":       # Need at least 0.6 for edge detection
+        #    raise Exception("ASUS.GPIO must be greater than 0.6")
         GPIO.setwarnings(False)        # Disable GPIO warnings
 
     @property
